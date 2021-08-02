@@ -1,4 +1,4 @@
-RUSTFLAGS='--cfg config_general_arch="x86"' cargo build --target /home/luc/Desktop/dev/maestro/arch/x86/target.json --release
+RUSTFLAGS='--cfg config_general_arch="x86" -C link-arg=-T/home/luc/Desktop/dev/maestro/arch/x86/linker.ld' cargo build --target /home/luc/Desktop/dev/maestro/arch/x86/target.json --release
 
 # On release:
 strip -K init -K fini target/target/release/maestro_hello_mod.so
