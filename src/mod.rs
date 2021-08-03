@@ -1,16 +1,14 @@
 #![no_std]
 
-extern crate maestro;
-
 // TODO rm
-use maestro::print;
+use abi::print;
 
 #[no_mangle]
 pub extern "C" fn init() {
-	maestro::println!("Hello world!");
+	abi::println!("Hello world!");
 }
 
 #[no_mangle]
 pub extern "C" fn fini() {
-	maestro::println!("Goodbye!");
+	abi::println!("Goodbye!");
 }
