@@ -1,4 +1,0 @@
-RUSTFLAGS='--cfg config_general_arch="x86" -C link-arg=-T/home/luc/Desktop/dev/maestro/arch/x86/linker.ld -C prefer-dynamic' cargo build --target /home/luc/Desktop/dev/maestro/arch/x86/target.json
-
-# On release:
-strip -K init -K fini target/target/release/maestro_hello_mod.so
