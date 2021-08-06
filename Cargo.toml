@@ -5,7 +5,7 @@ edition = "2018"
 
 [lib]
 path = "src/mod.rs"
-crate-type = ["cdylib"]
+crate-type = ["dylib"]
 
 [dependencies]
 maestro = { path = "../maestro" }
